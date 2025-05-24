@@ -23,9 +23,9 @@ const ThemeToggle = () => {
   return (
     <button onClick={() => setDarkMode(!darkMode)} className="cursor-pointer ">
       {darkMode ? (
-        <MdLightMode className="text-[24px] text-nav hover:text-accent" />
+        <MdLightMode className="text-[24px] text-nav hover:text-bg" />
       ) : (
-        <MdDarkMode className="text-[24px] text-nav  hover:text-accent" />
+        <MdDarkMode className="text-[24px] text-nav  hover:text-bg" />
       )}
     </button>
   );

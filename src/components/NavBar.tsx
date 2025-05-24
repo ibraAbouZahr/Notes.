@@ -11,6 +11,7 @@ import {
   faUserCircle,
   faLanguage,
   faNoteSticky,
+  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,6 +32,7 @@ export default function Navbar() {
 
   const navItems = [
     { icon: faHouseChimney, text: "Home", link: "/" },
+    { icon: faRobot, text: "Chatbot", link: "/Chatbot" },
 
     { icon: faUserCircle, text: "About", link: "/about" },
   ];
@@ -53,7 +55,7 @@ export default function Navbar() {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className="hover:text-accent transition-colors duration-150"
+              className="hover:text-bg transition-colors duration-150"
             >
               <Link
                 to={item.link}
